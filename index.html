@@ -1,11 +1,73 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Boutique Test</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ma Boutique — Produit</title>
+<meta name="description" content="Produit qualitatif, paiement sécurisé, livraison suivie." />
+<link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <h1>Bienvenue sur ma boutique test</h1>
-  <p>Ceci est un site provisoire pour valider Stripe.</p>
+<header class="container header">
+<h1 class="brand">Ma Boutique</h1>
+<nav class="nav">
+<a href="#produit">Produit</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<main class="container">
+<section id="produit" class="hero">
+<img src="./img/product_main.jpg" alt="Photo du produit" class="hero-img" />
+<div class="hero-copy">
+<h2>Nom du produit</h2>
+<p class="lead">Promesse claire en une phrase. Bénéfice principal.</p>
+<ul class="benefits">
+<li>Bénéfice 1 concret</li>
+<li>Bénéfice 2 mesurable</li>
+<li>Bénéfice 3 différenciant</li>
+</ul>
+<!-- Remplace par ton lien Stripe Payment Link (test ou live) -->
+<a class="btn" href="https://buy.stripe.com/test_XXXXXXXX" target="_blank" rel="noopener">Acheter maintenant</a>
+<p class="trust">Paiement sécurisé • Livraison 7–20 j • Retours 14 j</p>
+</div>
+</section>
+
+
+<section class="details">
+<h3>Détails</h3>
+<p>Décris les caractéristiques clés, la matière, dimensions, contenu du pack, etc.</p>
+</section>
+
+
+<section id="faq">
+<h3>FAQ</h3>
+<details><summary>Livraison</summary><p>Délais estimés 7–20 jours ouvrés (dropshipping).</p></details>
+<details><summary>Retours</summary><p>14 jours (conditions en CGV). Contact : support@exemple.fr</p></details>
+<details><summary>Paiement</summary><p>Stripe, cartes bancaires.</p></details>
+</section>
+
+
+<section id="contact">
+<h3>Contact</h3>
+<p>Une question ? Écris‑nous à <a href="mailto:support@exemple.fr">support@exemple.fr</a>.</p>
+</section>
+</main>
+
+
+<footer class="container footer">
+<nav class="legal">
+<a href="/legal/mentions.html">Mentions légales</a>
+<a href="/legal/cgv.html">CGV</a>
+<a href="/legal/privacy.html">Confidentialité</a>
+<a href="/legal/cookies.html">Cookies</a>
+</nav>
+<p class="small">© <span id="year"></span> Ma Boutique</p>
+</footer>
+
+
+<script src="./assets/app.js"></script>
 </body>
 </html>
