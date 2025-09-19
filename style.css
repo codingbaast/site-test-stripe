@@ -1,0 +1,22 @@
+:root{ --mx:1000px; --pad:16px; --radius:14px; --bg:#ffffff; --text:#111; --muted:#666; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;line-height:1.6;color:var(--text);background:var(--bg)}
+.container{max-width:var(--mx);margin:0 auto;padding:0 var(--pad)}
+.header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{margin:0;font-size:clamp(22px,3vw,28px)}
+.nav a{color:var(--text);text-decoration:none;margin-left:14px}
+.nav a:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:24px 0}
+.hero-img{width:100%;border-radius:var(--radius);display:block}
+.lead{color:var(--muted)}
+.benefits{padding-left:18px}
+.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:12px 18px;border-radius:var(--radius);font-weight:600}
+.btn:hover{opacity:.9}
+.trust{color:var(--muted);font-size:.95rem}
+.details, #faq, #contact{padding:24px 0}
+.footer{padding:24px 0;border-top:1px solid #eee;margin-top:24px}
+.legal a{color:var(--muted);text-decoration:none;margin-right:12px}
+.legal a:hover{text-decoration:underline}
+.small{color:var(--muted);font-size:.9rem}
+@media (max-width: 860px){ .hero{grid-template-columns:1fr} }
