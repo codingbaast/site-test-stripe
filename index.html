@@ -1,70 +1,71 @@
 <!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ma Boutique — Produit</title>
-<meta name="description" content="Produit qualitatif, paiement sécurisé, livraison suivie." />
-<link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-<header class="container header">
-<h1 class="brand">Ma Boutique</h1>
-<nav class="nav">
-<a href="#produit">Produit</a>
-<a href="#faq">FAQ</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
 
 
-<main class="container">
-<section id="produit" class="hero">
-<img src="./img/product_main.jpg" alt="Photo du produit" class="hero-img" />
+<main id="top">
+<!-- HERO -->
+<section class="hero container">
 <div class="hero-copy">
-<h2>Nom du produit</h2>
-<p class="lead">Promesse claire en une phrase. Bénéfice principal.</p>
+<h1 class="title"><!-- TODO:PRODUCT_NAME -->Nom du produit</h1>
+<p class="subtitle"><!-- TODO:ONE_LINER -->Promesse claire en une phrase. Bénéfice principal.</p>
 <ul class="benefits">
-<li>Bénéfice 1 concret</li>
-<li>Bénéfice 2 mesurable</li>
-<li>Bénéfice 3 différenciant</li>
+<li><!-- TODO:BENEFIT_1 -->Bénéfice 1 concret</li>
+<li><!-- TODO:BENEFIT_2 -->Bénéfice 2 mesurable</li>
+<li><!-- TODO:BENEFIT_3 -->Bénéfice 3 différenciant</li>
 </ul>
-<!-- Remplace par ton lien Stripe Payment Link (test ou live) -->
-<a class="btn" href="https://buy.stripe.com/test_XXXXXXXX" target="_blank" rel="noopener">Acheter maintenant</a>
-<p class="trust">Paiement sécurisé • Livraison 7–20 j • Retours 14 j</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="<!-- TODO:STRIPE_LINK -->https://buy.stripe.com/test_XXXXXXXX" target="_blank" rel="noopener">Acheter maintenant — <!-- TODO:PRICE -->39,90 €</a>
+<p class="trust">Paiement sécurisé • Livraison 7–20 j • Retours 14 j</p>
+</div>
+</div>
+<div class="hero-media">
+<img src="/img/product_main.jpg" alt="<!-- TODO:ALT_IMG -->Photo du produit" class="hero-img" />
 </div>
 </section>
 
 
-<section class="details">
-<h3>Détails</h3>
-<p>Décris les caractéristiques clés, la matière, dimensions, contenu du pack, etc.</p>
+<!-- FEATURES / CARACTÉRISTIQUES -->
+<section id="features" class="features container">
+<h2>Ce qui le rend différent</h2>
+<div class="grid-3">
+<article class="card"><h3><!-- TODO:FEAT_1_TITLE -->Qualité</h3><p><!-- TODO:FEAT_1_DESC -->Matériaux durables, toucher premium.</p></article>
+<article class="card"><h3><!-- TODO:FEAT_2_TITLE -->Praticité</h3><p><!-- TODO:FEAT_2_DESC -->Installation en 2 min, guide inclus.</p></article>
+<article class="card"><h3><!-- TODO:FEAT_3_TITLE -->SAV</h3><p><!-- TODO:FEAT_3_DESC -->Support sous 24–48 h, retours 14 j.</p></article>
+</div>
 </section>
 
 
-<section id="faq">
-<h3>FAQ</h3>
-<details><summary>Livraison</summary><p>Délais estimés 7–20 jours ouvrés (dropshipping).</p></details>
-<details><summary>Retours</summary><p>14 jours (conditions en CGV). Contact : support@exemple.fr</p></details>
-<details><summary>Paiement</summary><p>Stripe, cartes bancaires.</p></details>
+<!-- DETAILS / SECTION TEXTE -->
+<section class="details container">
+<h2>Détails</h2>
+<p><!-- TODO:DETAILS -->Décris les caractéristiques clés, la matière, dimensions, contenu du pack, etc.</p>
 </section>
 
 
-<section id="contact">
-<h3>Contact</h3>
-<p>Une question ? Écris‑nous à <a href="mailto:support@exemple.fr">support@exemple.fr</a>.</p>
+<!-- FAQ / PREUVES -->
+<section id="faq" class="faq container">
+<h2>FAQ</h2>
+<details open><summary>Livraison</summary><p><!-- TODO:FAQ_LIVRAISON -->Délais estimés 7–20 jours ouvrés (dropshipping).</p></details>
+<details><summary>Retours</summary><p><!-- TODO:FAQ_RETOURS -->14 jours (conditions en CGV). Contact : <!-- TODO:SUPPORT_EMAIL -->support@exemple.fr</p></details>
+<details><summary>Paiement</summary><p><!-- TODO:FAQ_PAIEMENT -->Stripe, cartes bancaires (paiement sécurisé).</p></details>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact container">
+<h2>Contact</h2>
+<p>Une question ? Écris‑nous : <a href="mailto:<!-- TODO:SUPPORT_EMAIL -->support@exemple.fr"><!-- TODO:SUPPORT_EMAIL -->support@exemple.fr</a></p>
 </section>
 </main>
 
 
-<footer class="container footer">
+<footer class="footer container">
 <nav class="legal">
 <a href="/legal/mentions.html">Mentions légales</a>
 <a href="/legal/cgv.html">CGV</a>
 <a href="/legal/privacy.html">Confidentialité</a>
 <a href="/legal/cookies.html">Cookies</a>
 </nav>
-<p class="small">© <span id="year"></span> Ma Boutique</p>
+<p class="small">© <span id="year"></span> <span><!-- TODO:BRAND -->Ma Boutique</span></p>
 </footer>
 
 
